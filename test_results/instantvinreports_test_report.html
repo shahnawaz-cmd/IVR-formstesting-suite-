@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InstantVINReports Selenium Test Report</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  th { background: #f5f5f5; }
+  .pass { background: #d4edda; }
+  .fail { background: #f8d7da; }
+  .pass td { background: #d4edda; }
+  .fail td { background: #f8d7da; }
+  a { color: #155724; }
+</style>
+</head>
+<body>
+  <h1>InstantVINReports Selenium Test Report</h1>
+  <p>Generated: 2026-03-31 23:05:28</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Test</th>
+        <th>Input</th>
+        <th>Expected</th>
+        <th>Actual</th>
+        <th>Status</th>
+        <th>Notes</th>
+        <th>Screenshot</th>
+        <th>Action Log</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class='pass'><td>VIN 17 chars redirect => success</td><td>WBAPH7G50BNM56522</td><td>https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=WBAPH7G50BNM56522&wpPage=homepage&landing=normal</td><td>https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=WBAPH7G50BNM56522&wpPage=homepage&landing=normal</td><td>pass</td><td>Redirected to expected VIN preview URL and plan radio interacted: https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=WBAPH7G50BNM56522&wpPage=homepage&landing=normal</td><td><a href='screenshots/VIN_17_chars_redirect_=__success_pass.png' target='_blank' title='Open screenshot in new tab'><img src='screenshots/VIN_17_chars_redirect_=__success_pass.png' alt='VIN_17_chars_redirect_=__success_pass.png' title='VIN_17_chars_redirect_=__success_pass.png' style='max-width:160px; max-height:120px; display:block; border:1px solid #999; margin-bottom:4px;'/></a><div style='font-size:0.8em; color:#333;'>VIN_17_chars_redirect_=__success_pass.png</div></td><td>Navigating to By VIN tab<br>Entering VIN: WBAPH7G50BNM56522<br>Clicking Search VIN button<br>Verifying plan radio button interaction after redirect<br>Looking for plan section using XPath: /html/body/div[4]/div/div/div/div[2]/div<br>Found plan heading: Unlock the history - Choose your package.<br>Clicked plan radio 1/4<br>Clicked plan radio 2/4<br>Clicked plan radio 3/4<br>Clicked plan radio 4/4<br>Interacted with all 4 plan radios<br>Returned to base page after interacting with all plans</td></tr><tr class='pass'><td>VIN 17 chars SH record => success</td><td>1FMCU9J98FUA78638</td><td>https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=1FMCU9J98FUA78638&wpPage=homepage&landing=normal</td><td>https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=1FMCU9J98FUA78638&wpPage=homepage&landing=normal</td><td>pass</td><td>Redirected to expected VIN preview URL and plan radio interacted: https://instantvinreports.com/vin-check/preview?type=vhr&utm_details=&traffic_source=&vin=1FMCU9J98FUA78638&wpPage=homepage&landing=normal</td><td><a href='screenshots/VIN_17_chars_SH_record_=__success_pass.png' target='_blank' title='Open screenshot in new tab'><img src='screenshots/VIN_17_chars_SH_record_=__success_pass.png' alt='VIN_17_chars_SH_record_=__success_pass.png' title='VIN_17_chars_SH_record_=__success_pass.png' style='max-width:160px; max-height:120px; display:block; border:1px solid #999; margin-bottom:4px;'/></a><div style='font-size:0.8em; color:#333;'>VIN_17_chars_SH_record_=__success_pass.png</div></td><td>Navigating to By VIN tab<br>Entering VIN: 1FMCU9J98FUA78638<br>Clicking Search VIN button<br>Verifying plan radio button interaction after redirect<br>Looking for plan section using XPath: /html/body/div[4]/div/div/div/div[2]/div<br>Found plan heading: Unlock the history - Choose your package.<br>Clicked plan radio 1/4<br>Clicked plan radio 2/4<br>Clicked plan radio 3/4<br>Clicked plan radio 4/4<br>Interacted with all 4 plan radios<br>Returned to base page after interacting with all plans</td></tr><tr class='pass'><td>Plate only => error</td><td>plate=hbl1216, state=None</td><td>error</td><td>Please enter a valid State.</td><td>pass</td><td>Error message displayed as expected.</td><td><a href='screenshots/Plate_only_=__error_pass.png' target='_blank' title='Open screenshot in new tab'><img src='screenshots/Plate_only_=__error_pass.png' alt='Plate_only_=__error_pass.png' title='Plate_only_=__error_pass.png' style='max-width:160px; max-height:120px; display:block; border:1px solid #999; margin-bottom:4px;'/></a><div style='font-size:0.8em; color:#333;'>Plate_only_=__error_pass.png</div></td><td>Navigating to By LP tab<br>Entering license plate: hbl1216<br>Finding Search License Plate button<br>Clicking Search License Plate button</td></tr><tr class='pass'><td>Plate TX valid state with retry => success</td><td>plate=hbl1216, state=TX</td><td>https://instantvinreports.com/vin-check/license-preview?type=vhr&utm_details=&traffic_source=&vin=dGtlbmw2YVJZNENRTE04cUtLY1pPakdka3RHOGhtTGxFZkhOWTdqTE84OD0=&wpPage=homepage&landing=normal</td><td>https://instantvinreports.com/vin-check/license-preview?type=vhr&utm_details=&traffic_source=&vin=dGtlbmw2YVJZNENRTE04cUtLY1pPakdka3RHOGhtTGxFZkhOWTdqTE84OD0=&wpPage=homepage&landing=normal</td><td>pass</td><td>Redirected to expected plate preview URL: https://instantvinreports.com/vin-check/license-preview?type=vhr&utm_details=&traffic_source=&vin=dGtlbmw2YVJZNENRTE04cUtLY1pPakdka3RHOGhtTGxFZkhOWTdqTE84OD0=&wpPage=homepage&landing=normal</td><td><a href='screenshots/Plate_TX_valid_state_with_retry_=__success_pass.png' target='_blank' title='Open screenshot in new tab'><img src='screenshots/Plate_TX_valid_state_with_retry_=__success_pass.png' alt='Plate_TX_valid_state_with_retry_=__success_pass.png' title='Plate_TX_valid_state_with_retry_=__success_pass.png' style='max-width:160px; max-height:120px; display:block; border:1px solid #999; margin-bottom:4px;'/></a><div style='font-size:0.8em; color:#333;'>Plate_TX_valid_state_with_retry_=__success_pass.png</div></td><td>Navigating to By LP tab<br>Entering license plate: hbl1216<br>Selecting state: TX<br>State dropdown click intercepted: Message: element click intercepted: Element <select aria-label="Select State" class="input_field select_state lp_input error_field" id="stateList" required="" onchange="syncValues(this, 'select_state'); moveFocusToPlate();" onclick="listStateData()">...</select> is not clickable at point (620, 23). Other element would receive the click: <a href="https://instantvinreports.com/license-plate-lookup" class="elementor-item">...</a>
+  (Session info: chrome=146.0.7680.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x6fcdf3+10b03]
+	chromedriver!GetHandleVerifier [0x6fcf24+10c34]
+	chromedriver!(No symbol) [0x4e2120]
+	chromedriver!(No symbol) [0x5312b8]
+	chromedriver!(No symbol) [0x52f4c9]
+	chromedriver!(No symbol) [0x52ce82]
+	chromedriver!(No symbol) [0x52c094]
+	chromedriver!(No symbol) [0x521ca8]
+	chromedriver!(No symbol) [0x54db0c]
+	chromedriver!(No symbol) [0x5216e4]
+	chromedriver!(No symbol) [0x54dcd4]
+	chromedriver!(No symbol) [0x56a9a5]
+	chromedriver!(No symbol) [0x54d8a6]
+	chromedriver!(No symbol) [0x520229]
+	chromedriver!(No symbol) [0x520fe4]
+	chromedriver!GetHandleVerifier [0x9648b9+2785c9]
+	chromedriver!GetHandleVerifier [0x95feb5+273bc5]
+	chromedriver!GetHandleVerifier [0x97e06b+291d7b]
+	chromedriver!GetHandleVerifier [0x715cc8+299d8]
+	chromedriver!GetHandleVerifier [0x71d9fd+3170d]
+	chromedriver!GetHandleVerifier [0x7058c8+195d8]
+	chromedriver!GetHandleVerifier [0x705a92+197a2]
+	chromedriver!GetHandleVerifier [0x6eee9a+2baa]
+	KERNEL32!BaseThreadInitThunk [0x761a7ba9+19]
+	ntdll!RtlInitializeExceptionChain [0x77c1c0cb+6b]
+	ntdll!RtlClearBits [0x77c1c04f+bf]
+, using JS click<br>Visible text select failed: Message: Could not locate element with visible text: TX; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+<br>Selected state by matching option text: TX - Texas<br>Finding Search License Plate button<br>Clicking Search License Plate button</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
